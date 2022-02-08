@@ -21,6 +21,9 @@ def insertion_sort(array):
             if array[k] > buf:
                 array[k+1] = array[k]
 
+                if k == 0:
+                    array[k] = buf
+
             else:
                 array[k+1] = buf
                 break
